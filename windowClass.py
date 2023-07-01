@@ -10,9 +10,14 @@ class Window(QWidget):
         self.setWindowIcon(QIcon("database-storage.png"))
         #self.setFixedHeight(800)
         #self.setFixedWidth(900)
-        
+             
         #this will take x and y coordinates
-        self.setGeometry(500,300, 400, 300)
+        self.setGeometry(500, 300, 400, 300)
+        stylesheet = (
+            'background-color:skyblue'
+
+        )
+        self.setStyleSheet(stylesheet)
 
 
 app = QApplication([])
